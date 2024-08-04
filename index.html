@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,9 @@
     
 
 <nav class="bg-red-700 border-gray-200">
-  <div class="fixed w-full bg-red-700 z-40 flex flex-wrap items-center justify-between mx-auto p-4">
+  <div class="fixed w-full bg-red-700 z-40 flex flex-wrap items-center justify-between mx-auto p-4 shadow">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <a href="#"><span class="font-semibold text-xl tracking-tight">aMostra de Estatística</span></a>
+      <a href="/~amostra/pages/index.html"><span class="font-semibold text-xl tracking-tight">aMostra de Estatística</span></a>
     </div>
     <button onclick="toggleMenu()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -45,14 +45,42 @@
   </div>
 </nav>
   
-  <div class="flex-grow flex items-center justify-center h-screen bg-red-700 pb_16">
-    <img src="/styles/logo_branco_isolado.png" alt="Logo da Amostra" class="w-1/6 h-auto max-w-32 mb-10 md:mb-2">
-    <div class="text-center p-4 max-w-xs md:max-w-md lg:max-w-lg xl:max-w-2xl">
-      <h1 class="text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">aMostra de Estatística</h1> 
+  <div class="flex-grow flex items-center p-4  justify-center gap-32 h-screen bg-red-700 pb_16">
+    <div class="max-w-3xl text-center">
+      <h1
+        class="text-white text-3xl font-extrabold text-transparent sm:text-5xl"
+      >
+        Amostra Estatística 2024
+      </h1>
+      <h2 class="text-xl font-bold text-white mt-2 sm:text-2xl">
+        XVII Edição
+      </h2>
+      
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">
+        A aMostra é um evento imperdível que acontece anualmente, organizada pelos alunos do curso de Estatística do IME-USP! Esse ano ela ocorrerá nos dias 30/09 a 04/10.
+      </p>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          class="block w-full rounded border border-red-600 bg-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+          href="#sec-3"
+        >
+          Cronograma
+        </a>
+
+        <a
+          class="block w-full rounded border border-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-red-600 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+          href="#"
+        >
+          Saiba mais
+        </a>
+      </div>
     </div>
+    <img src="styles/logo_branco_isolado.png" alt="Logo da Amostra" class="w-1/6 h-auto mb-10 md:mb-2 hidden lg:block">
+    <a href="#sec-2"><svg class="h-16 w-16 absolute bottom-0 right-0 m-10 border p-4 rounded-full animate-bounce" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_down [#338]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583" id="arrow_down-[#338]"> </path> </g> </g> </g> </g></svg></a>
   </div>
 
-  <section>
+  <section id="sec-2">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
@@ -75,7 +103,7 @@
   </section>
   
 
-  <h1 class="text-2xl md:text-4xl self-center font-bold">Programação dos dias</h1>
+  <h1 id="sec-3" class="pt-16 text-2xl md:text-4xl self-center font-bold">Programação dos dias</h1>
   
   <div class="container mx-auto py-8 px-4 md:px-32">
     <div class="bg-white p-6 rounded-lg shadow-lg">
@@ -179,7 +207,7 @@
     </div>
 
     <div class="mx-auto mt-8 max-w-xl">
-      <button class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-rose-600 px-5 py-3 text-white ">
+      <button class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white ">
         <span class="text-sm font-medium"> Se inscreva! </span>
           <svg
             class="size-5 rtl:rotate-180"
@@ -203,7 +231,7 @@
   <footer class="bg-gray-100">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="flex justify-center">
-        <img src="/styles/Logo.png" alt="Logo da Amostra" class="w-10 h-auto max-w-32 mb-10 md:mb-2">
+        <img src="styles/Logo.png" alt="Logo da Amostra" class="w-10 h-auto max-w-32 mb-10 md:mb-2">
         <h6 class="p-2">Amostra de Estatística</h6>
       </div>
   
@@ -252,6 +280,33 @@
             <span class="sr-only">Youtube</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 256 256">
               <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z"></path></g></g>
+              </svg>
+          </a>
+        </li>
+         
+        <li>
+          <a
+            href="https://www.linkedin.com/company/amostraestatistica/"
+            rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75"
+          >
+            <span class="sr-only">Linkedin</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path></g></g>
+              </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/@amostra.usp"
+            rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75"
+          >
+            <span class="sr-only">Tiktok</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.757,0 -5,2.243 -5,5v32c0,2.757 2.243,5 5,5h32c2.757,0 5,-2.243 5,-5v-32c0,-2.757 -2.243,-5 -5,-5zM37.006,22.323c-0.227,0.021 -0.457,0.035 -0.69,0.035c-2.623,0 -4.928,-1.349 -6.269,-3.388c0,5.349 0,11.435 0,11.537c0,4.709 -3.818,8.527 -8.527,8.527c-4.709,0 -8.527,-3.818 -8.527,-8.527c0,-4.709 3.818,-8.527 8.527,-8.527c0.178,0 0.352,0.016 0.527,0.027v4.202c-0.175,-0.021 -0.347,-0.053 -0.527,-0.053c-2.404,0 -4.352,1.948 -4.352,4.352c0,2.404 1.948,4.352 4.352,4.352c2.404,0 4.527,-1.894 4.527,-4.298c0,-0.095 0.042,-19.594 0.042,-19.594h4.016c0.378,3.591 3.277,6.425 6.901,6.685z"></path></g></g>
               </svg>
           </a>
         </li>
